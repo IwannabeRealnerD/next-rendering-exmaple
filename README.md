@@ -1,36 +1,57 @@
-This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
+<div align="center">
+  <h2 align="center">next-rendering-example</h2>
 
-## Getting Started
+  <p align="center">
+    Example pages for all different renderin methods for NextJS 14(with app and page router)
+    <br />
+    <a href="https://github.com/IwannabeRealnerD/next-rendering-exmaple/issues">Report Bug</a>
+    ·
+    <a href="https://github.com/IwannabeRealnerD/next-rendering-exmaple/issues">Request Feature</a>
+  </p>
+</div>
 
-First, run the development server:
+<div align="center">
+  <img src="https://img.shields.io/badge/next.js-000000?style=for-the-badge&logo=next.js&logoColor=white">
+  <img src="https://img.shields.io/badge/react-646CFF?style=for-the-badge&logo=react&logoColor=white">
+</div>
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deyployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Deployed to [github pages](https://iwannaberealnerd.github.io/khanne-sh/)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## How to use
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+## Getting started in your local environment
 
-## Learn More
+- To get started with this project, you need to clone the reapository and install the dependency.
 
-To learn more about Next.js, take a look at the following resources:
+### Environment Setup
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- nodejs - 20.10.0
+- pnpm - 8.15.4
+  ```sh
+  corepack prepare pnpm@8.15.4 --activate
+  ```
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+### How to Deploy Dev Server
 
-## Deploy on Vercel
+1. Clone repository
+   ```sh
+   git clone https://github.com/IwannabeRealnerD/next-rendering-exmaple.git
+   ```
+2. Install pnpm dependency
+   ```sh
+   pnpm install --frozen-lockfile
+   ```
+3. Start Dev Server
+   ```sh
+   pnpm dev
+   ```
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## Upcoming features
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
+- [ ] Changelog
+
+## Contact
+
+khanne - iwannaberealnerd@gmail.com
