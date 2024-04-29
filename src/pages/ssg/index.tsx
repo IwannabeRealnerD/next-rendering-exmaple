@@ -33,7 +33,7 @@ export default function Person(props: PersonProps) {
 }
 
 export const getStaticProps: GetStaticProps = async () => {
-  const res = await fetch(`https://swapi.dev/api/people/5`);
+  const res = await fetch(`https://swapi.py4e.com/api/people/5`);
   const person = await res.json();
   return {
     props: {

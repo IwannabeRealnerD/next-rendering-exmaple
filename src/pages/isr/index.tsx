@@ -1,4 +1,4 @@
-import { GetServerSideProps } from "next";
+import { GetStaticProps } from "next";
 
 interface PersonProps {
   person: {
@@ -19,11 +19,13 @@ interface PersonProps {
     edited: string;
     url: string;
   };
+  timeStamp: string;
 }
 
 export default function Person(props: PersonProps) {
   return (
     <div>
+      {props.timeStamp}
       <h1>{props.person.name}</h1>
       <p>키: {props.person.height}</p>
       <p>몸무게: {props.person.mass}</p>
@@ -32,12 +34,15 @@ export default function Person(props: PersonProps) {
   );
 }
 
-export const getServerSideProps: GetServerSideProps = async () => {
+export const getStaticProps: GetStaticProps = async () => {
   const res = await fetch(`https://swapi.py4e.com/api/people/4`);
+  const timeStamp = new Date().toISOString();
   const person = await res.json();
   return {
     props: {
       person,
+      timeStamp,
     },
+    revalidate: 10,
   };
 };

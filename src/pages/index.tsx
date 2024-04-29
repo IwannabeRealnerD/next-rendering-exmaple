@@ -5,8 +5,9 @@ export default function Home() {
     <main>
       <h2>pages router main page</h2>
       <p>This page is prerendered page.</p>
-      <Link href="/ssr">page SSR Page</Link>
-      <Link href="/ssg">page SSR Page</Link>
+      <Link href="/ssr">SSR Page</Link>
+      <Link href="/ssg">SSG Page</Link>
+      <Link href="/isr">ISR Page</Link>
     </main>
   );
 }
